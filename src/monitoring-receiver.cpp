@@ -46,8 +46,8 @@ void setup()
     ResponseStructContainer c;
     c = e32ttl.getConfiguration();
     Configuration configuration = *(Configuration*) c.data;
-    configuration.ADDL = 0x03;
-    configuration.ADDH = 0x00;
+    configuration.ADDL = BROADCAST_ADDRESS;
+    configuration.ADDH = BROADCAST_ADDRESS;
     configuration.CHAN = 0x04;
     configuration.OPTION.fixedTransmission = FT_FIXED_TRANSMISSION;
     e32ttl.setConfiguration(configuration, WRITE_CFG_PWR_DWN_SAVE);
