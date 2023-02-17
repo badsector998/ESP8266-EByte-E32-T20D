@@ -77,7 +77,7 @@ D7  -> M0
 
 G   -> GND
 
-It is recommended to use 3v instead 5v on the module for safety measure and use pull up resistor for better stability.
+It is recommended to use 3v instead 5v on the module for safety measure and use pull up resistor for better stability (4,7 kOhm).
 ## Library Depedencies
 
 - [PlatformIO](https://platformio.org/)
