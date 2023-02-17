@@ -23,10 +23,15 @@ This module also capable for many transmission mode such as :
 ![img](https://www.mischianti.org/wp-content/uploads/2019/10/LoRa_E32_transmittingScenarios.jpg)
 
 Each mode can be programmed the M1 and M0 pins as follows :
+
 M1 + M0 = Mode
+
 0 & 0 = Normal Transparent Mode
+
 0 & 1 = Wake On Radio
+
 1 & 0 = Power Saving
+
 1 & 1 = Sleep mode (No Receive & Tramsit) & Programming mode
 
 each of these modes can be programmed by firmware or manually connect the M0 & M1 pin to VCC or GND.
