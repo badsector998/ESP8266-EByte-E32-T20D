@@ -8,7 +8,8 @@ Testing purpose for LoRa EByte E32-433T20D Module with ESP8266 (Wemos D1 Mini). 
 
 LoRa Ebyte E32-433T20D is based on SX1278 LoRa chip with modified communication protocol with working frequency on ~433MHz. Instead using SPI this module use UART to communicate with the MCU. Simply using RX/TX pin or declare 
 ```c++
-SoftwareSerial mySerial(D2, D3);
+SoftwareSerial mySerial(D2, D3); // ESP
+SoftwareSerial mySerial(2, 3); // Arduino
 ```
 to use custom pin for RX/TX. Most of the module operation is using Serial with auxilliary pin to read the extended information about the module.
 
