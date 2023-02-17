@@ -29,7 +29,7 @@ All the source file is stored within `src` folder and build options or configura
 
 Inside `platformio.ini` files the structure are described as follows :
 
-#### Common Config
+### Common Config
 This configuration will apply to every child that declared below this section. `[env]` stands for 'environment' and it applies globally.
 ```plaintext
 [env]
@@ -39,7 +39,7 @@ monitor_speed = 9600
 lib_deps = xreef/EByte LoRa E32 library@^1.5.10
 ```
 
-#### Child Config
+### Child Config
 This section describe the child config that inherits all the `[env]` declarations with extended config such as which port that we will upload, which monitor port we want to connect and which source file we want to build and upload. The following name after `env:` describe the name of the child for this example we set name `transmitter`
 ```plaintext
 [env:trasmitter]
