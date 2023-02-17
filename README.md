@@ -35,7 +35,6 @@ M1 + M0 = Mode
 1 & 1 = Sleep mode (No Receive & Tramsit) & Programming mode
 
 each of these modes can be programmed by firmware or manually connect the M0 & M1 pin to VCC or GND.
-
 Based on manual this module only capable to make transmission within 3 Km with clear line of sight.
 ## Project Structure
 
