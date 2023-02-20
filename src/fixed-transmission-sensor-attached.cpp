@@ -36,5 +36,6 @@ void loop() {
     int current_sens_value = analogRead(SND_PIN);
     String payload = "Current sound intensity : " + (String)current_sens_value;
     ResponseStatus rs = E32_433.sendBroadcastFixedMessage(0x04, payload);
+    Serial.println(rs.getResponseDescription());
     delay(1000);
 }
