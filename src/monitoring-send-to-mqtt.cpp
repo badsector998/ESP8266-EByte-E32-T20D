@@ -27,7 +27,7 @@
  
 #include <SoftwareSerial.h>
 SoftwareSerial loraSerial(D2, D3); // e32 TX e32 RX
-SoftwareSerial simSerial(D6, D7); // sim TX sim RX 
+SoftwareSerial simSerial(D0, D1); // sim TX sim RX 
 LoRa_E32 e32ttl(&loraSerial, D5, D7, D6);
 // -------------------------------------
 
